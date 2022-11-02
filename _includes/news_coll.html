@@ -1,0 +1,24 @@
+{% assign entries = site[include.collection] %}
+
+{% if sort_by %}
+  {% assign entries = entries | sort: include.sort_by %}
+{% endif %}
+
+{% if include.sort_order == 'reverse' %}
+  {% assign entries = entries | reverse %}
+{% endif %}
+
+{% if include.max_num %}
+  {% assign i = include.max_num %}
+{% else %}
+  {% assign i = 100 %}
+{% endif %}
+
+{%- for post in entries -%}
+  {%- if forloop.index > i -%}
+    {%- break -%}
+  {%- endif -%}
+  {%- unless post.hidden -%}
+    {% include news_item.html %}
+  {%- endunless -%}
+{%- endfor -%}

@@ -4,9 +4,9 @@ main:
     url: /about/
   - title: "Projects"
     url: /projects/
+  - title: "News"
+    url: /news/
   - title: "Publications"
-    url: /publications/
-  - title: "Blog"
-    url: /blog/
+    url: https://scholar.google.com/citations?user=Kbp7OjMAAAAJ&hl=en&authuser=1
   - title: "CV"
     url: /JamesMullenCV.pdf

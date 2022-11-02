@@ -6,29 +6,47 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/splash-page.jpg
 excerpt: >
-  I am a First Year Ph.D. student at x advised by x. I am working on x.<br />
+  I am a Second Year Ph.D. student working in the <a href="http://gamma.umd.edu/">GAMMA Lab</a> at the
+  University of Maryland advised by <a href="https://www.cs.umd.edu/people/dmanocha">Dr. Dinesh Manocha</a>
+  and <a href="http://www.cs.umd.edu/~lin/">Dr. Ming Lin</a>. My research interests lie at the intersection of
+  Human-Robot Interaction, Embodied AI, and Virtual/Augmented Reality. I am developing methods to enable intuitive
+  and trust-building communication between robots and users in complex environments.<br /><br />
+  <a href="/about/">Learn More About Me Here.</a>
+  <!-- Make sure to update _config when updating excerpt! -->
 feature_row:
-  - image_path: /assets/images/collab.png
+  - image_path: /assets/images/placing.jpg
+    alt: "Placing Animations"
+    title: "Placing Virtual Humans into Complex Indoor Environments"
+    excerpt: "Humans interact with their environment through contact. We leverage this insight to
+    better place moving humans into complex, cluttered indoor scenes such that any actions in the
+    humans motion is matched by the objects in the scene. For example, a sitting action will sit
+    on a chair."
+    url: "https://gamma.umd.edu/researchdirections/animation-placement/main"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/Communicating-Inferred-Goals.jpg
     alt: "Collab"
     title: "Multimodal Interfaces for Communicating Robot Learning"
-    excerpt: "Learn more about me or see my CV."
-    url: "/about/"
+    excerpt: "Robots learn as they interact with humans, but how do humans know what the robot has
+    learned and when it needs teaching? We leverage information-rich augmented reality to passively
+    visualize what the robot has inferred, and attention-grabbing haptic wristbands to actively prompt
+     and direct the human’s teaching."
+    url: "/projects/interfaces"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/project.png
-    alt: "Projects"
-    title: "Projects"
-    excerpt: "Read about my current and past projects"
-    url: "/projects/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/blog.png
-    alt: "Blog"
-    title: "Blog"
-    excerpt: "Read my posts including paper reviews"
-    url: "/blog/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
----
-{% include feature_row %}
 
+intro-news:
+  - excerpt: <h1>Recent Updates:</h1>
+intro-projects:
+  - excerpt: <h1>Recent Projects:</h1>
+classes: wide
+
+collection: news
+sort_by: id
+sort_order: reverse
+---
+{% include feature_row id="intro-news" type="center" %}
+{% include news_coll.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout max_num=10 %}
+{% include feature_row id="intro-projects" type="center" %}
+{% include feature_row %}
+See a full listing of my publications <a href="https://scholar.google.com/citations?user=Kbp7OjMAAAAJ&hl=en&authuser=1">here</a>.

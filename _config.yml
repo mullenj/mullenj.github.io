@@ -28,14 +28,34 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
 defaults:
-  # _posts
+  # projects
   - scope:
       path: ""
-      type: posts
+      type: projects
     values:
+      layout: single
+      classes: wide
       show_date: true
       read_time: true
+      author_profile: false
+  # news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      classes: wide
+      show_date: true
+      read_time: true
+      author_profile: false
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -79,9 +99,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : jamesmullenn
+  username               : jamesfmullen
 facebook:
-  username               : jamesmullenn
+  username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -90,10 +110,9 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: 
+  links:
     - https://www.linkedin.com/in/mullenjvt/
-    - https://www.facebook.com/jamesmullenn/
-    - https://twitter.com/jamesmullenn
+    - https://twitter.com/jamesfmullen
     - https://www.instagram.com/jamesfmullen/
 # Analytics
 analytics:
@@ -107,18 +126,15 @@ analytics:
 author:
   name             : "James Mullen"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am a First Year Ph.D. student at x advised by x. I am working on x."
-  location         : "Blacksburg, VA"
+  bio              : "I am a Ph.D. student at the Univeristy of Maryland."
+  location         : "Arlington, VA"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/mullenjvt"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jamesmullenn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/jamesmullenn"
+      url: "https://twitter.com/jamesfmullen"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jamesfmullen"
@@ -131,10 +147,7 @@ footer:
       url: "https://linkedin.com/in/mullenjvt"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jamesmullenn"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/jamesmullenn"
+      url: "https://twitter.com/jamesfmullen"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://facebook.com/jamesfmullen"
