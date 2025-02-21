@@ -6,14 +6,38 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/splash-page.jpg
 excerpt: >
-  I am a Second Year Ph.D. student working in the <a href="http://gamma.umd.edu/">GAMMA Lab</a> at the
+  I am a Ph.D. candidate working in the <a href="http://gamma.umd.edu/">GAMMA Lab</a> at the
   University of Maryland advised by <a href="https://www.cs.umd.edu/people/dmanocha">Dr. Dinesh Manocha</a>
-  and <a href="http://www.cs.umd.edu/~lin/">Dr. Ming Lin</a>. My research interests lie at the intersection of
-  Human-Robot Interaction, Embodied AI, and Virtual/Augmented Reality. I am developing methods to enable intuitive
-  and trust-building communication between robots and users in complex environments.<br /><br />
+  and <a href="http://www.cs.umd.edu/~lin/">Dr. Ming Lin</a>. I have a strong background in AI-driven robotics 
+  and a passion for problems with real-world robotic applications. My research interests lie at the intersection of
+  Human-Robot Interaction, Embodied AI, and Virtual/Augmented Reality. During my Ph.D. at UMD, I have focused on 
+  leveraging large datasets, large simulation platforms, and large language models (LLMs) to enhance robotic 
+  perception, decision-making, and communication with users.<br /><br />
   <a href="/about/">Learn More About Me Here.</a>
   <!-- Make sure to update _config when updating excerpt! -->
 feature_row:
+  - image_path: /assets/images/HomeEmergency.jpg
+    alt: "Home Safety"
+    title: "Robots and LLMs for Home Safety"
+    excerpt: "Inspired by the abilities of home robots today, I've completed two projects at Amazon aimed 
+    at proactively detecting potential dangers in the home, and responding to actively occuring emergencies.
+    For example, imagine your elderly family member has taken a hard fall, we want to use the sensing on the
+    robot to determine that an emergency is occuring, find the user, assess the situation, and call emergency
+    services if necessary."
+    url: "https://arxiv.org/abs/2404.08827"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/LGX.jpg
+    alt: "Language-Guided Exploration"
+    title: "LLM-Based Zero-Shot Object Navigation"
+    excerpt: "We present LGX, a novel algorithm for Object Goal Navigation in a language-driven, 
+    zero-shot manner, where an embodied agent navigates to an arbitrarily described target object 
+    in a previously unexplored environment. Our approach leverages the capabilities of Large Language 
+    Models (LLMs) for making navigational decisions by mapping the LLMs implicit knowledge about the 
+    semantic context of the environment into sequential inputs for robot motion planning. "
+    url: "https://gamma.umd.edu/researchdirections/embodied/lgx/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
   - image_path: /assets/images/placing.jpg
     alt: "Placing Animations"
     title: "Placing Virtual Humans into Complex Indoor Environments"
@@ -49,4 +73,4 @@ sort_order: reverse
 {% include news_coll.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout max_num=10 %}
 {% include feature_row id="intro-projects" type="center" %}
 {% include feature_row %}
-See a full listing of my publications <a href="https://scholar.google.com/citations?user=Kbp7OjMAAAAJ&hl=en&authuser=1">here</a>.
+See a full listing of my publications <a href="https://scholar.google.com/citations?user=Kbp7OjMAAAAJ">here</a>.

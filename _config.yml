@@ -111,7 +111,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links:
-    - https://www.linkedin.com/in/mullenjvt/
+    - https://www.linkedin.com/in/mullenjf/
     - https://twitter.com/jamesfmullen
     - https://www.instagram.com/jamesfmullen/
 # Analytics
@@ -125,13 +125,13 @@ analytics:
 # Site Author
 author:
   name             : "James Mullen"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am a Ph.D. student at the Univeristy of Maryland."
+  avatar           : "/assets/images/Headshot.jpeg"
+  bio              : "I am a Ph.D. candidate at the Univeristy of Maryland."
   location         : "Arlington, VA"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/mullenjvt"
+      url: "https://linkedin.com/in/mullenjf"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jamesfmullen"
